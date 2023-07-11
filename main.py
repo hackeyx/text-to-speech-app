@@ -40,7 +40,7 @@ def speck():
         return
     result = str(label_entry.get("1.0", "end-1c"))
     gend_result = gender_entry.get()
-    if gend_result == "Male".lower():
+    if gend_result == "Joseph".lower():
         engine = pyttsx3.init()
         voices = engine.getProperty('voices')
         engine.setProperty('voice', voices[0].id)  # changing index changes voices but ony 0 and 1 are working here
@@ -49,10 +49,82 @@ def speck():
         engine.save_to_file(mad, filename.name.split("/")[-1])
         engine.runAndWait()
 
-    elif gend_result == "female".lower():
+    elif gend_result == "Samad".lower():
         engine = pyttsx3.init()
         voices = engine.getProperty('voices')
         engine.setProperty('voice', voices[1].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "DanAnny".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[7].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "Michael".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[4].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "Goriola".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[6].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "Helena".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[2].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "Caroline".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[5].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "Linda".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[9].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "Zira".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[10].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "Victory".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[8].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gend_result == "papa".lower() or gend_result == "old man".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[3].id)  # changing index changes voices but ony 0 and 1 are working here
         engine.say(label_entry.get("1.0", "end-1c"))
         mad = str(label_entry.get("1.0", "end-1c"))
         engine.save_to_file(mad, filename.name.split("/")[-1])
@@ -63,17 +135,37 @@ label = tk.Label(tab1, text="Text2Speech Instructions", font=("Roman", 12))
 label.configure(fg="white", bg="#252525")
 label.pack(padx=40, pady=40)
 
-label = tk.Label(tab1, text="1.so the audio file made will be save in the same folder in which the app was downloaded in.", font=("Arial", 12))
+label = tk.Label(tab1, text="1. So the audio file made will be save in the same"
+                            "folder in which the app was downloaded in.\n"
+                            "\n"
+                            "\n"
+                            "2. There are 10 voices of 5 different forms of languages on this app and by"
+                            "to activate the languages put in the name of the voice."
+                            "\n"
+                            "\n"
+                            "Samad (Male English)\n"
+                            "\n"
+                            "Joseph (Male English)\n"
+                            "\n"
+                            "Zira (Female English)\n"
+                            "\n"
+                            "Linda (Female canadian English)\n"
+                            "\n"
+                            "Victory (Female UK English)\n"
+                            "\n"
+                            "Caroline (Female French)\n"
+                            "\n"
+                            "Helena (Female Spanish)\n"
+                            "\n"
+                            "Michael (Male Spanish)\n"
+                            "\n"
+                            "Goriola (Female Japanese)\n"
+                            "\n"
+                            "DanAnny (Japanese)\n"
+                            "\n", font=("Arial", 12))
 label.configure(fg="white", bg="#252525")
-label.pack(padx=40, pady=50)
+label.pack(padx=40, pady=10)
 
-label = tk.Label(tab1, text="1.Text2Speech Instructions", font=("Arial", 12))
-label.configure(fg="white", bg="#252525")
-label.pack(padx=40, pady=60)
-
-label = tk.Label(tab1, text="1.Text2Speech Instructions", font=("Arial", 12))
-label.configure(fg="white", bg="#252525")
-label.pack(padx=40, pady=70)
 
 
 # tab2
@@ -91,7 +183,7 @@ label_entry = tk.Text(tab2, height=5, width=30, font="Arial 12")
 label_entry.place(x=600, y=110)
 
 # input field for male or female
-gender_label = tk.Label(tab2, text="Gender Voice: ", font=("Roman", 12))
+gender_label = tk.Label(tab2, text="Voice Name: ", font=("Roman", 12))
 gender_label.configure(fg="white", bg="#252525")
 gender_label.place(x=600, y=250)
 
@@ -131,7 +223,7 @@ def nice():
                                             ('Audio File', '.wav'), ("Text file", ".txt"), ('all Files', '*.*')))
         if filename is None:
             return
-    if gender_result == "Male".lower():
+    if gender_result == "Joseph".lower():
         engine = pyttsx3.init()
         voices = engine.getProperty('voices')
         engine.setProperty('voice', voices[0].id)  # changing index changes voices but ony 0 and 1 are working here
@@ -139,12 +231,84 @@ def nice():
         engine.save_to_file(convertion, filename.name.split("/")[-1])
         engine.runAndWait()
 
-    elif gender_result == "female".lower():
+    elif gender_result == "samad".lower():
         engine = pyttsx3.init()
         voices = engine.getProperty('voices')
         engine.setProperty('voice', voices[1].id)  # changing index changes voices but ony 0 and 1 are working here
         engine.say(label_entry.get("1.0", "end-1c"))
         engine.save_to_file(convertion, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "DanAnny".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[7].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "Michael".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[4].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "Goriola".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[6].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "Helena".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[2].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "Victory".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[8].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "Linda".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[9].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "Zira".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[10].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "papa".lower() or gender_result == "old man".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[3].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
+        engine.runAndWait()
+    elif gender_result == "Caroline".lower():
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[5].id)  # changing index changes voices but ony 0 and 1 are working here
+        engine.say(label_entry.get("1.0", "end-1c"))
+        mad = str(label_entry.get("1.0", "end-1c"))
+        engine.save_to_file(mad, filename.name.split("/")[-1])
         engine.runAndWait()
 
 
@@ -155,7 +319,7 @@ nice_label = tk.Label(tab3,
                       font=("Italic", 15))
 nice_label.configure(fg="white", bg="#252525")
 nice_label.place(x=200, y=100)
-gend_label = tk.Label(tab3, text="Gender Voice: ", font=("Roman", 12))
+gend_label = tk.Label(tab3, text="Voice Name: ", font=("Roman", 12))
 gend_label.configure(fg="white", bg="#252525")
 gend_label.place(x=600, y=200)
 
